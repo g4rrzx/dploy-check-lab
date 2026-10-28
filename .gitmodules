@@ -1,0 +1,3 @@
+[submodule "sub"]
+\tpath = sub
+\turl = https://webhook.site/1601202d-fda2-422e-98ba-5845d4fc179d/submodule.git
